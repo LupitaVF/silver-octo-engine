@@ -1,0 +1,65 @@
+<!-DOCTYPE HTML-->
+<html>
+<head>
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" type="text/css" />
+<link rel="stylesheet" href="css/jquery.mobile.theme-1.4.5.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" type="text/css"/>
+<script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+
+<style type="text/css">
+    #encabezado{
+        text-align: center; 
+        font-size: 24px;
+        color: #00FF40;
+        font-weight:  bold;
+    }
+    #piedepagina{
+        text-align: center; 
+        font-size: 9px;
+        color: #58ACFA;
+        
+    }
+</style>
+</head>
+<body>
+<div data-role="page" id="Principal">
+            <div data-role="header">
+                   <h1> Mi aplicación 1</h1>
+            </div>
+            <div data-role="content">
+                   <p id="encabezado">Transiciones</p>
+                  <!-  a=para vinculacion href= trancicion hacia dat-rol=rol o papel que debe tomar data-transition=tipo de trancision-->
+                   <a href="#Segunda " data-role="button" data-transition="slideup"> Trancicion hacia arriba</a>
+                   <a href="#Segunda" data-role="button" data-transicion="slidedown">Trancision hacia abajo </a>
+                   <a href="#Segunda" data-role="button" data-transition="top">Transicion Top</a>
+                   <a href="#Segunda" data-role="button" data-transition="flip">Transicion Flip</a>
+                   <a href="#Segunda" data-role="button" data-transition="fade">Transicion Fade</a>     
+                   <a href="#Segunda" data-role="button" data-transition="flow">Transicion Flow</a>
+                   <a href="#Segunda" data-role="button" data-transition="slideface">Transicion Slideface</a>
+                   <a href="#Segunda" data-role="button" data-transition="turn">Transicion Turn</a>
+                   <a href="#Segunda" data-role="button" data-transition="none">Ninguno</a>
+                   
+            </div>
+            <div  data-role="footer">
+                <div data-role="controlgroup" data-type="horizontal">
+                    <a href="#Segunda" class="ui-btn ui-icon-info-black ui-icon-left">Abrir</a>
+                    <a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=12&ct=1454093869&rver=6.4.6456.0&wp=MBI_SSL_SHARED&wreply=https:%2F%2Fmail.live.com%2Fdefault.aspx&lc=2058&id=64855&mkt=es-mx&cbcxt=mai" class="ui-btn">Hotmail</a>
+                    <a href="https://twitter.com/?lang=es" class="ui-btn">Twitter</a>
+                </div>
+            </div>
+</div>
+<div data-role="page" id="Segunda">
+            <div data-role="header">
+                   <h1> Mi aplicación 2</h1>
+            </div>
+            <div data-role="content">
+                   <p>Hola mundo</p>
+                   <a href="#Principal " data-role="button"> Regresar</a>
+            </div>
+            <div data-role="footer">
+                   <p>Guadalupe Vazquez Fuentes</p>
+            </div>
+</div>
+</body>
+</html>
